@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+Comments App
+In this project, let's build a Comments App by applying the concepts we have learned till now.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Refer to the image below:
 
-## Available Scripts
+comments output
 
-In the project directory, you can run:
+Design Files
+Click to view
+Extra Small (Size < 576px) and Small (Size >= 576px)
+Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)
+Set Up Instructions
+Click to view
+Download dependencies by running npm install
+Start up the app using npm start
+Completion Instructions
+Functionality to be added
 
-### `npm start`
+The app must have the following functionalities
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Initially, the list of comments should be zero and the inputs fields should be empty
+When non-empty values are provided and Add Comment button is clicked,
+A new comment should be added to the list of comments
+The comments count should be incremented by one
+The value of the input fields for name and comment should be updated to their initial values
+When the Like button of a comment is clicked, if the image for Like is
+Like image, then it should be changed to the Liked image
+Liked image, then it should be changed to the Like image
+When the Delete button of a comment is clicked, the comment should be deleted from the list of comments and the comments count should be decremented by one
+Components Structure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+component breakdown structure
 
-### `npm test`
+Implementation Files
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Use these files to complete the implementation:
 
-### `npm run build`
+src/components/Comments/index.js
+src/components/Comments/index.css
+src/components/CommentItem/index.js
+src/components/CommentItem/index.css
+Quick Tips
+Click to view
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The formatDistanceToNow function in the date-fns package is used to return the gap between the given date and now in words.
+JAVASCRIPT
+Important Note
+Click to view
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The following instructions are required for the tests to pass
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+HTML input element for name should have the placeholder as Your Name
+HTML textarea element for comment should have the placeholder as Your Comment
+The Like image for each comment should have the alt as like
+The Delete button for each comment should have the data-testid as delete
+To display how much time ago the comment was posted, we will use formatDistanceToNow function from date-fns package
+Resources
+Image URLs
+https://assets.ccbp.in/frontend/react-js/comments-app/comments-img.png alt should be comments
+https://assets.ccbp.in/frontend/react-js/comments-app/delete-img.png alt should be delete
+https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png
+https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png
+Colors
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Hex: #dee0e3
+Hex: #1e293b
+Hex: #475569
+Hex: #cbd2d9
+Hex: #0284c7
+Hex: #f59e0b
+Hex: #0b69ff
+Hex: #f97316
+Hex: #10b981
+Hex: #b91c1c
+Hex: #0ea5e9
+Hex: #334155
+Hex: #94a3b8
+Hex: #64748b
+Hex: #7e858e
+Font-families
+Roboto
+Things to Keep in Mind
+All components you implement should go in the src/components directory.
+Don't change the component folder names as those are the files being imported into the tests.
+Do not remove the pre-filled code
+Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
